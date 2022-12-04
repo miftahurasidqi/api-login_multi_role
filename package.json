@@ -2,12 +2,13 @@
   "name": "api",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "engines": {
     "node": "14.x"
   },
   "scripts": {
-    "api": "nodemon server.js"
+    "start": "node index.js",
+    "test": "echo\"Error: no test spesified\" && exit 1"
   },
   "keywords": [],
   "author": "",
