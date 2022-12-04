@@ -1,6 +1,10 @@
 GET http://localhost:3211/users
 
+###
+GET http://localhost:3211/products
 
+###
+GET http://localhost:3211/products/f84e618e-9eb7-424f-992d-b74a80509416
 ###
 GET http://localhost:3211/users/bagol 212
 
@@ -18,7 +22,15 @@ Content-Type: application/json
      "role":"admin"
 }
 
+###
+POST http://localhost:3211/products
+Content-Type: application/json
 
+
+{
+     "name": "rokok 5",
+     "price": 20000
+}
 ###
 POST http://localhost:3211/users
 Content-Type: application/json
@@ -33,7 +45,7 @@ Content-Type: application/json
 }
 
 ###
-PATCH http://localhost:3211/users/a27ab658-6065-4742-af8e-55cefd705b0
+PATCH http://localhost:3211/users/88f5be1d-a405-4209-8d7b-364a392e96ce
 Content-Type: application/json
 
 
@@ -68,5 +80,26 @@ Content-Type: application/json
 
 POST http://localhost:3211/login
 Content-Type: application/json
-{  "email": "angge@gmail.com",
-     "password": "angger",}
+
+{
+       "email": "angger@gmail.com",
+     "password": "angger"
+     }
+###
+GET http://localhost:3211/me
+     
+
+###
+DELETE http://localhost:3211/logout
+
+###
+PATCH http://localhost:3211/products/88f5be1d-a405-4209-8d7b-364a392e96ce
+Content-Type: application/json
+
+
+{
+     "name": "asu tenan",
+      "price": 100
+}
+###
+DELETE http://localhost:3211/products/35720429-062c-4d29-9524-011a99ecf84b
