@@ -1,0 +1,72 @@
+GET http://localhost:3211/users
+
+
+###
+GET http://localhost:3211/users/bagol 212
+
+###
+POST http://localhost:3211/users
+Content-Type: application/json
+
+
+{
+     
+     "name": "mifta2",
+     "email": "mifta2@gmail.com",
+     "password": "mifta2",
+     "confirmPassword":"mifta2",
+     "role":"admin"
+}
+
+
+###
+POST http://localhost:3211/users
+Content-Type: application/json
+
+
+{
+     "name": "asuuuu",
+     "email": "angge@gmail.com",
+     "password": "angger",
+     "confirmPassword":"angger",
+     "role":"user"
+}
+
+###
+PATCH http://localhost:3211/users/a27ab658-6065-4742-af8e-55cefd705b0
+Content-Type: application/json
+
+
+{
+     "name": "asuu",
+     "email": "angge@gmail.com",
+     "password": "asu",
+     "confirmPassword":"asu",
+     "role":"user"
+}
+
+###
+
+
+###
+DELETE http://localhost:3211/users/a27ab658-6065-4742-af8e-55cefd705b0
+
+
+###
+
+POST http://localhost:3211/login
+Content-Type: application/json
+
+
+{
+     
+     "email": "mifta@gmail.com",
+     "password": "mifta"
+}
+
+###
+
+POST http://localhost:3211/login
+Content-Type: application/json
+{  "email": "angge@gmail.com",
+     "password": "angger",}
